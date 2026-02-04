@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Statvion Infotech</title>
+  <meta charset="UTF-8">
+  <title>Statvion Infotech | End-to-End IT Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <h1>Contact Us</h1>
-  <p>Connect with us via WhatsApp or Email</p>
+<!-- HEADER -->
+<header class="header">
+  <img src="assets/logo.png" alt="Statvion Infotech Logo" class="logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#enterprise">Enterprise</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="email" id="email" placeholder="Your Email" required>
-    <textarea id="message" placeholder="Your Message" required></textarea>
-
-    <div class="buttons">
-      <button type="button" onclick="sendWhatsApp()">WhatsApp</button>
-      <button type="button" onclick="sendEmail()">Email</button>
+<!-- HERO -->
+<section id="home" class="hero" style="background-image:url('assets/cyberpunk-illustration-with-futuristic-technology-bright-neon-lights.jpg')">
+  <div class="hero-overlay">
+    <h1>End-to-End IT Services & Business Consultancy</h1>
+    <p>Building scalable, secure, and intelligent digital enterprises</p>
+    <div class="hero-buttons">
+      <button onclick="sendWhatsApp()">WhatsApp</button>
+      <button onclick="sendEmail()">Email Us</button>
     </div>
-  </form>
-</div>
+  </div>
+</section>
 
-<!-- Floating WhatsApp Icon -->
-<a id="floating-whatsapp" onclick="sendWhatsApp()">💬</a>
+<!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+
+    <div class="card">
+      <img src="assets/representation-user-experience-interface-design.jpg">
+      <h3>Software & Web Development</h3>
+      <p>Custom software, enterprise web apps, scalable systems.</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/standard-quality-control-concept-m.jpg">
+      <h3>Data, AI & Analytics</h3>
+      <p>Data analysis, dashboards, automation & AI solutions.</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/enterprise-bg.jpg">
+      <h3>Enterprise IT & Consulting</h3>
+      <p>End-to-end IT strategy, consulting, and execution.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ENTERPRISE -->
+<section id="enterprise" class="enterprise" style="background-image:url('assets/enterprise-bg.jpg')">
+  <div class="enterprise-content">
+    <h2>Enterprise-Grade Solutions</h2>
+    <p>
+      We partner with organizations to architect, build, and manage
+      technology-driven enterprises with long-term scalability.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <input id="name" placeholder="Your Name">
+    <input id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+
+    <div class="contact-buttons">
+      <button onclick="sendWhatsApp()">WhatsApp</button>
+      <button onclick="sendEmail()">Send Email</button>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<div class="floating-whatsapp" onclick="sendWhatsApp()">💬</div>
 
 <script src="script.js"></script>
 </body>
