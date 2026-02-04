@@ -1,5 +1,5 @@
-const WHATSAPP_NUMBER = "919999999999"; // replace with your WhatsApp number
-const EMAIL_TO = "contact@statvion.com"; // replace with your email
+const WHATSAPP_NUMBER = "916388205751"; // replace with your WhatsApp number
+const EMAIL_TO = "statvioninfotech@gmail.com"; // replace with your email
 
 function getFormData() {
   const name = document.getElementById("name").value;
