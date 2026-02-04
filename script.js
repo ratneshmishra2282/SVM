@@ -26,7 +26,7 @@ function sendEmail() {
 
   const subject = encodeURIComponent("New Enquiry from Website");
   const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${statvioninfotech@gmail.com}\n\nMessage:\n${message}`
+    `Name: ${statvioninfotech}\nEmail: ${statvioninfotech@gmail.com}\n\nMessage:\n${message}`
   );
 
   window.location.href = `mailto:${EMAIL_TO}?subject=${subject}&body=${body}`;
